@@ -1,0 +1,346 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MY CV</title>
+	</head>
+	<body>
+		<header>
+			<div class="img-container">
+				<img src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t1.15752-9/398534118_641934951347335_7691687734849286608_n.png?_nc_cat=103&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHz10Cd6erN02OeteLQmdOtvSdXZ_1ep--9J1dn_V6n7xxFBstYkidkQdy-QfeesvhQdt7XMRyfvw20vLlW-has&_nc_ohc=8yioKQgFTEsAX-QqCuk&_nc_ht=scontent.fsgn5-12.fna&oh=03_AdSYQ2lWV9lxJHg0LwjP9lBoaLdtA2q14jWbIwjEaETC3w&oe=657FAB87" alt="" class="img avatar" />
+			</div>
+			<div class="title-container">
+				<h1>Đặng Minh Phúc</h1>
+				<h2>Học Sinh Sinh Viên Làm Việc Học Tập Ở ĐH Sư Phạm TP Hồ Chí Minh___
+
+               Quê Quán: Bến Tre, Việt Nam___
+          Địa Chỉ: 229/60F, Bùy Đình Túy, P24, Tp Hồ Chí Minh___
+          Phone Number: 0936177061___
+          Khẩu hiệu: " Khiêm tốn không bao giờ là thiếu trong cuộc đời tôi "___
+          Châm Ngôn: " Chỉ có cách a lùi bước để thấy đường đi phía trước "
+        </h2>
+			</div>
+		</header>
+		
+
+
+		
+<!--Phần CSS-->		
+		<style>
+			body{
+    margin: 0;
+    background-color: black;
+  }
+  
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    padding: 20px 0;
+    background-color:rebeccapurple;
+    display: flex;
+  }
+  /* 
+  p{
+    padding: 0 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+  } */
+  
+  .text-content{
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .img-container {
+    background-color: olivedrab;
+    padding: 4px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  
+  .title-container{
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .title-container h1, .title-container h2{
+    color: olivedrab;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .title-container h2{
+    font-size: 18px;
+    
+    color: olivedrab;
+    margin-top: 10px;
+  }
+  
+  .img, .avatar{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+  }
+  
+  .container{
+    padding: 20px;
+    background-color:olivedrab;
+    display: flex;
+  
+  }
+  
+  .sider, .content{
+     background-color:olivedrab;
+      padding: 20px 0;
+      width: 100%;
+  }
+  
+  .sider {
+    width: calc(40% - 20px);
+    margin-right: 20px;
+  }
+  
+  .content {
+    flex-grow: 1;
+  }
+  
+  .tag-fill{
+    background-color: #6E6E6E;
+    padding: 8px 20px;
+    color: rebeccapurple;
+    font-size: 18px;
+    display: inline-block;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  
+  .tag-content {
+    padding-left: 20px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .tag-content ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tag-content ul li {
+    list-style-type: none;
+    padding: 8px 0
+  }
+  
+  .progress-container {
+    width: 80%;
+  }
+  
+  .progress-title{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .progress-wrap{
+    width: 100%;
+    height: 10px;
+    background-color: olivedrab;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .progress{
+    width: 50%;
+    height: 10px;
+    background-color: #6E6E6E;
+  }
+  
+  .tag{
+    font-size: 18px;
+    color: black   ;
+    padding: 10px 20px;
+    border-left: 18px solid #6E6E6E;
+    margin-bottom: 20px;
+  }
+  
+  .tabbar-title{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .tabbar-title .text-content {
+    font-weight: 600;
+    color: black;
+  }
+  
+  .content ul {
+    padding: 0;
+  }
+  
+  .content ul li {
+    list-style-type: none;
+  }
+  
+  
+  .description-content h3{
+    padding: 0 20px;
+    margin-bottom: 8px;
+  }
+  
+  .description-content ul {
+    padding-left: 40px ;
+  }
+  
+  .description-content ul li{
+    text-align: justify;
+    list-style-type: none
+  }
+  
+  .description-content ul li ul li{
+    text-align: justify;
+    list-style-type: square;
+    margin-bottom: 16px;
+  }
+  a {
+    color: rebeccapurple;
+    text-decoration: none;
+  }
+  
+		</style>
+
+<!--Phần CSS-->
+
+
+
+
+<!--LIÊN HỆ-->
+		<div class="container">
+			<div class="sider">
+				<div class="sider-content">
+					<h1 class="tag-fill">Liên hệ</h1>
+					<div class="tag-content">
+						<ul style="color: black;"> 
+                            
+							<li><a  href="https://www.facebook.com/" target="_blank" >Facebook:</a> Đặng Minh Phúc</li>
+							<li><a href="https://zaloapp.com/qr/p/9vs92trye5wt"target="_blank"> Zalo:</a> Đặng Minh Phúc </li>
+							<li><a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">Gmail:</a> minhphucdang1503@gmail.com</li>
+							
+						</ul>
+					</div>
+				</div>  
+
+<!--KĨ NĂNG-->
+				<div class="sider-content">
+					<h1 class="tag-fill">Kĩ năng</h1>
+					<div class="tag-content progress-container">
+						<p class="progress-title">Hướng dẫn Tin học văn phòng với Lập trình coder</p>
+						<div class="progress-wrap">
+							<div class="progress" style="width: 70%"></div>
+						</div>
+					</div>
+					<div class="tag-content progress-container">
+						<p class="progress-title">Giao tiếp làm việc nhóm</p>
+						<div class="progress-wrap">
+							<div class="progress" style="width: 60%"></div>
+						</div>
+					</div>
+					<div class="tag-content progress-container">
+						<p class="progress-title">Giao lưu Tiếng Anh với người nước ngoài</p>
+						<div class="progress-wrap">
+							<div class="progress" style="width: 70%"></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="sider-content">
+					<h1 class="tag-fill">Chứng chỉ</h1>
+					<div class="tag-content">
+						
+						<ul class="text-content">
+							<li>-Ms Word </li>
+                            <li>-Học sinh giỏi 12 năm</li>
+                            <li>-Cháu ngoan Bác Hồ 12 năm</li>
+                            <li>-Con ngoan trò giỏi nhận học bổng Nguyễn Đức Cảnh</li>
+							<li>-IELTS: </li>
+						</ul>
+					</div>
+				</div>
+</div>
+			<div class="content">
+				<div>
+					<h1 class="tag">Giới thiệu</h1>
+					<p class="text-content">
+						           Tôi luôn yêu thích ngành nghề sư phạm tin mình đã chọn và sẽ làm thật tốt với ngành nghề đã được mình tin tưởng, và thầm cảm ơn trường ĐH Sư Phạm TP.HCM thật sự là năng động và tràn trề sức trẻ tuổi thanh xuân. Tôi mãi yêu ngôi trường và sẽ phấn đấu học tập bản thân thật tốt để xứng đáng làm 1 mẫu giáo viên với 3 tiêu chí châm ngôn của trường là chất lượng sáng tạo nhân văn.    
+					</p>
+				</div>
+				<div class="description-content">
+					<h1 class="tag">Kinh nghiệm làm việc</h1>
+					<ul>
+						<li>
+							<div class="tabbar-title">
+								<p class="text-content">Trường ĐH Sư Phạm TP.HCM</p>
+                 
+							</div>
+              <p class="text-content">Niên khóa: 2023-2027</p>
+							<h3>Từng là học sinh công tác ở</h3>
+							<p class="text-content">-Các Ngôi Trường Cũ</p>
+                                <ul>
+                                    <li>Trường Tiểu Học Kim Đồng</li>
+                                    <li>Trường THCS Hà Huy Tập </li>
+                                    <li>Trường THPT Hoàng Hoa Thám</li>
+                                </ul>
+
+
+							
+						</li>
+					</ul>
+				</div>
+				<div class="description-content">
+					<h1 class="tag">HỌC VẤN</h1>
+					<ul>
+						<li>
+							<div class="tabbar-title">
+								<p class="text-content"></p>
+								<p class="text-date"> </p>
+							</div>
+							<h3>Sinh viên sư phạm Tin học</h3>
+							<p class="text-content">
+								
+							</p>
+							<ul>    
+								<li>
+									Trường/ nơi đào tạo: Đại học sư phạm thành phố Hồ Chí Minh
+								</li>
+								<li>
+									Xếp loại: Giỏi
+								</li>
+								<li>
+									Khoa: Công nghệ thông tin
+								</li>
+								<li>
+									Ngành: Sư phạm Tin học
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
